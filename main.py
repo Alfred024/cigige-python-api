@@ -31,7 +31,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("../potatoDisease/potatoDisease/models")
+# MODEL = tf.keras.models.load_model("../potatoDisease/potatoDisease/models")
 # MODEL = tf.keras.models.load_model("../potatoDisease/potatoDisease/models/1.keras")
 PLANTS_STATE = ["Ready"]
 # CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
