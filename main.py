@@ -16,10 +16,17 @@ origins = [
     "http://localhost:3000",
     "https://cicuge-app.vercel.app/"
 ]
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
+    allow_origins=["*"],  # Allow requests from any origin
+    # allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
