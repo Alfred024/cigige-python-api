@@ -1,0 +1,7 @@
+En base a la selección del tipo de cultivo debe...
+	Debe determinar la intensidad del color del cultivo
+	Debe determinar la altura del cultivo
+
+
+
+	
