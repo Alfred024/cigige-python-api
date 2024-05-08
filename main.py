@@ -30,7 +30,7 @@ PLANTS_STATE = ["Ready", "Unready"]
 
 @app.get("/ping")
 async def ping():
-    return "Hello, I am alive"
+    return "Hello, ping."
 
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
