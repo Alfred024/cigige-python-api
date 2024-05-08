@@ -31,8 +31,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# MODEL = tf.keras.models.load_model("./models/1")
-PLANTS_STATE = ["Ready", "Unready"]
+MODEL = tf.keras.models.load_model("../potatoDisease/potatoDisease/models")
+# MODEL = tf.keras.models.load_model("../potatoDisease/potatoDisease/models/1.keras")
+PLANTS_STATE = ["Ready"]
 # CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
 @app.get("/ping")
@@ -58,8 +59,9 @@ async def predict(
     response = random.choice(PLANTS_STATE)
     
     # predictions = MODEL.predict(img_batch)
-    # predicted_class = CLASS_NAMES[np.argmax(predictions[0])]
+    # predicted_class = PLANTS_STATE[np.argmax(predictions[0])]
     # confidence = np.max(predictions[0])
+    # print(predictions)
     # return {
     #     'class': predicted_class,
     #     'confidence': float(confidence)
